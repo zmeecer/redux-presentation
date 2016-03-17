@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Redux</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+</head>
+<body class="shower list">
+	<header class="caption">
+		<h1>Redux</h1>
+		<p>Predictable, Modern, Incredible</p>
+	</header>
+	<section class="slide" id="cover">
+		<h2>Redux: predictable, modern, incredible</h2>
+		<p>
+			Źmicier Jaraševič
+			<br />
+			Azati Mobile Team
+		</p>
+		<style>
+			#cover {
+				background: url('pictures/redux-wtf.jpg') center no-repeat;
+				background-size: cover;
+			}
+			#cover h2 {
+				margin: 0;
+				color:#FADF1C;
+				text-align:center;
+				font-size:56px;
+				}
+			#cover p {
+				margin:250px 0 0;
+				text-align:center;
+				color:#FFF;
+				font-size:44px;
+				}
+		</style>
+	</section>
+	<section class="slide" id="history">
+		<h2>History</h2>
+		<ol>
+			<li>Vanilla</li>
+			<li>jQuery</li>
+			<li>MVC</li>
+			<li>React</li>
+			<li>Flux</li>
+			<li>Redux</li>
+		</ol>
+		<p class="note">Redux [ˈriːdʌks] adjective: brought back, revived</p>
+		<style>
+			#history {
+				background: #fff url('pictures/mvvc.jpg') right center no-repeat;
+				background-size: 70%;
+			}
+		</style>
+	</section>
+	<section class="slide" id="flux">
+		<h2>Flux</h2>
+		<img src="pictures/flux.png" style="width: 100%;" \>
+	</section>
+	<section class="slide" id="flux2">
+		<style>
+			#flux2 {
+				background: #fff url('pictures/flux2.jpg') center no-repeat;
+				background-size: 100%;
+			}
+		</style>
+	</section>
+	<section class="slide" id="flux3">
+		<style>
+			#flux3 {
+				background: #fff url('pictures/flux-diagram.png') center no-repeat;
+				background-size: auto 100%;
+			}
+		</style>
+	</section>
+	<section class="slide" id="dan">
+		<style>
+			#dan {
+				background: #fff url('pictures/dan.jpeg') center no-repeat;
+				background-size: contain;
+			}
+		</style>
+	</section>
+	<section class="slide" id="principles">
+		<h2>Three Principles</h2>
+		<ol>
+			<li>
+				<b>Single source of truth</b> &nbsp; store.getState()
+				<br/>
+				<span>The state of your whole application is stored in an object tree within a single store.</span>
+			</li>
+			<li>
+				<b>State is read-only</b> &nbsp; store.dispathc(action(data))
+				<br/>
+				<span>The only way to mutate the state is to emit an action, an object describing what happened.</span>
+			</li>
+			<li>
+				<b>Changes are made with pure functions</b> &nbsp; (state, action) => newState
+				<br/>
+				<span>To specify how the state tree is transformed by actions, you write pure reducers.</span>
+			</li>
+		</ol>
+		<style>
+			#principles li span {
+				font-size: 0.8em;
+				color: #666;
+			}
+		</style>
+	</section>
+  <section class="slide" id="parts">
+		<h2>Parts</h2>
+		<ol>
+			<li>Actions</li>
+			<li>Reducers</li>
+			<li>Store</li>
+			<li>Middleware</li>
+			<li>
+        React Redux
+        <ol>
+          <li>Presentational Components</li>
+          <li>Container Components</li>
+          <li>React Router</li>
+        </ol>
+      </li>
+		</ol>
+		<style>
+			#parts {
+				background: #fff url('pictures/flow.gif') right no-repeat;
+				background-size: 75%;
+			}
+		</style>
+	</section>
+	<section class="slide">
+		<h2>Dumb vs. Smart</h2>
+		<table>
+			<tr>
+				<th scope="col"></th>
+				<th>Component</th>
+				<th>Container</th>
+			</tr>
+			<tr>
+				<th scope="col">Purpose</th>
+				<td>How things look</td>
+				<td>How things work</td>
+			</tr>
+			<tr>
+				<th scope="row">Aware of Redux</th>
+				<td>No</td>
+				<td>Yes</td>
+			</tr>
+			<tr>
+				<th scope="row">To read data</th>
+				<td>From props</td>
+				<td>Redux state</td>
+			</tr>
+			<tr>
+				<th scope="row">To change data</th>
+				<td>Invoke callbacks from props</td>
+				<td>Dispatch Redux actions</td>
+			</tr>
+		</table>
+	</section>
+	<section class="slide" id="code">
+		<h2>Code sample</h2>
+		<img src="pictures/code.png" style="width:100%"/>
+	</section>
+	<section class="slide" id="redux-end">
+		<style>
+			#redux-end {
+				background: url('pictures/redux.jpg') center no-repeat;
+				background-size: cover;
+			}
+		</style>
+	</section>
+	<div class="progress"></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
